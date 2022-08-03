@@ -1,6 +1,6 @@
 let socket = io.connect();
 
-socket.on('productos', (data) => {
+socket.on('products', (data) => {
 	if (data.length > 0 ) {
 		const productsList  = data.map(function (product) {
 			return `<thead>
